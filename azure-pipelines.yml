@@ -18,4 +18,16 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+- task: PerformanceCenterTesting@1
+  inputs:
+    varPCServer: 'https://elr.deloitteresources.com/Loadtest/pcx/login?ReturnUrl=%2FLoadtest'
+    varUserName: 'byasodakumar'
+    varPassWord: 'satyA5308VSKP'
+    varDomain: 'LA_County'
+    varProject: 'LA_County'
+    varTestID: '232'
+    varAutoTestInstance: 'false'
+    varTestInstID: '11'
+    varTimeslotDuration: '30'
+    artifactsDirectory: '$(Build.ArtifactStagingDirectory)/LRETest'
 
